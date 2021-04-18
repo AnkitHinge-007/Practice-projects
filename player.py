@@ -10,7 +10,7 @@ def position(pos):
     global video
     video.set(cv2.CAP_PROP_POS_FRAMES, pos)
 
-video = cv2.VideoCapture("campus.mp4")
+video = cv2.VideoCapture("campus.mp4")    # any video file of any format can be added here
 cv2.namedWindow("Video player")
 
 tracker = 50
