@@ -1,4 +1,4 @@
-#This file is owned by Ankit Hinge
+#This file is maintained by Ankit Hinge
 
 import cv2
 
@@ -14,7 +14,7 @@ video = cv2.VideoCapture("campus.mp4")    # any video file of any format can be 
 cv2.namedWindow("Video player")
 
 tracker = 50
-cv2.createTrackbar("Speed", "Video player", 50, 100, speed)
+cv2.createTrackbar("Speed", "Video player", 50, 100, speed)      # playback speed decreases from 0 to 100
 
 videolen = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
 cv2.createTrackbar("Position", "Video player", 0, videolen, position)
@@ -31,9 +31,9 @@ while (True) :
 
     key = cv2.waitKey(tracker)
 
-    if key == ord('q'):
+    if key == ord('q'):     # Use 'q' button to quit the video
         break
-    if key == ord(' '):     # Use 'space bar' to play and pause video.
+    if key == ord(' '):     # Use 'space bar' to play and pause video
         cv2.waitKey(-1)
 
 video.release()
