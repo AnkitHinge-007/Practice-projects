@@ -31,7 +31,7 @@ while (True) :
 
     key = cv2.waitKey(tracker)
 
-    if key == ord('q'):     # Use 'q' button to quit the video
+    if key%256 == 27:     # Use 'esc' button to quit the video
         break
     if key == ord(' '):     # Use 'space bar' to play and pause video
         cv2.waitKey(-1)
