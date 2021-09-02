@@ -3,8 +3,6 @@
 # A simple project to learn about ggplot in R. 
 # It is a data visualisation project of the suicide cases in india.
 
-# Dataset link - https://www.kaggle.com/rajanand/suicides-in-india
-
 # Link for the project - https://rstudio.cloud/project/2700664
 # login to rstudio cloud to view the project
 
